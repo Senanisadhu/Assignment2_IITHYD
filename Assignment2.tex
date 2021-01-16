@@ -1,0 +1,250 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\title{ASSIGNMENT-2}
+\author{SENANI SADHU}
+\date{\today}
+\begin{document}
+	\maketitle
+	\pagenumbering{roman}
+	\section{Questions:-}
+	\paragraph{Find the inverse and QR decomposition of the
+		following.}
+	\subsection{}
+	\begin{equation}
+		\begin{pmatrix}
+			2 & 1\\
+			1 & 1\\
+		\end{pmatrix}
+	\end{equation}
+\paragraph{Solution:-}
+\subsubsection{Inverse:-}
+Let
+\[
+A = \begin{bmatrix}
+	2 & 1 \\ 
+	1 & 1
+\end{bmatrix}
+\]
+be a full-rank $2\times2$ matrix. 
+Then $\det A\equiv\lvert A\rvert=2\times{1}-1\times{1}=1$ and 
+\[
+A^{-1}=\begin{bmatrix}
+	2 & 1 \\ 
+	1 & 1
+\end{bmatrix}^{-1}
+=\frac{1}{\lvert A\rvert}
+\begin{bmatrix*}[r]
+	1 & -1 \\ 
+	-1 &  2
+\end{bmatrix*} \,.
+\]
+Therefore inverse of A=$\begin{bmatrix}
+	1 & -1\\
+	-1 & 2
+\end{bmatrix}$
+\newline
+\subsubsection{QR Decomposition:-}
+Let
+\[
+A = \begin{bmatrix}
+	2 & 1 \\ 
+	1 & 1
+\end{bmatrix}
+\]
+The column vectors of the matrix is given by,
+\newline
+\begin{equation}
+	a=
+	\begin{bmatrix}
+		2\\
+		1
+	\end{bmatrix}
+	,b=
+	\begin{bmatrix}
+		1\\
+		1
+	\end{bmatrix}
+\end{equation}
+\newline
+Therefore,
+\newline
+\begin{equation}
+	\begin{bmatrix}
+		a & b
+	\end{bmatrix}=
+	\begin{bmatrix}
+		$$q_1$$ & $$q_2$$
+	\end{bmatrix}\begin{bmatrix}
+	$$u_1$$ & $$u_3$$\\
+	0 & $$u_2$$
+\end{bmatrix}=QR
+\end{equation}
+\newline
+\begin{equation}
+	$$$u_1$=$\mid \mid a \mid \mid$=$\sqrt{2^2+1^2}$=$\sqrt{5}$$$
+\end{equation}
+\newline
+$q_1$=$\frac{a}{u_1}$=
+$\begin{bmatrix}
+	\frac{2}{\sqrt{5}}\\
+	\frac{1}{\sqrt{5}}
+\end{bmatrix}$
+\newline
+$u_3$=$q^T_{1}$b=
+$\begin{bmatrix}
+	\frac{2}{\sqrt{5}} & \frac{1}{\sqrt{5}}\\
+\end{bmatrix}$
+$\begin{bmatrix}
+	1 \\
+	1
+\end{bmatrix}$=$\frac{3}{\sqrt{5}}$
+\newline
+x=b-$u_3$$q_1$
+\newline
+$q_2$=$\frac{x}{\mid \mid x \mid \mid}$=
+$\begin{bmatrix}
+	\frac{-1}{5\sqrt{5}}\\
+	\frac{2}{5\sqrt{5}}
+\end{bmatrix}$
+\newline
+$u_2$=$q^T_{2}$b=
+$\begin{bmatrix}
+	\frac{1}{5\sqrt{5}}
+\end{bmatrix}$
+\newline
+Therefore,
+\newline
+\paragraph{\begin{equation}
+	Q=
+	\begin{bmatrix}
+		\frac{2}{\sqrt{5}} & \frac{-1}{5\sqrt{5}}\\
+		\frac{1}{\sqrt{5}} & \frac{2}{5\sqrt{5}}
+	\end{bmatrix}
+\end{equation}}
+\paragraph{\begin{equation}
+		R=
+		\begin{bmatrix}
+			\sqrt{5} & \frac{3}{5\sqrt{5}}\\
+			0 & \frac{1}{5\sqrt{5}}
+	\end{bmatrix}
+\end{equation}}
+\subsection{}
+\begin{equation}
+	\begin{pmatrix}
+		1 & 3\\
+		2 & 7\\
+	\end{pmatrix}
+\end{equation}
+\paragraph{Solution:-}
+Let
+\[
+A = \begin{bmatrix}
+	1 & 3 \\ 
+	2 & 7
+\end{bmatrix}
+\]
+be a full-rank $2\times2$ matrix. 
+Then $\det A\equiv\lvert A\rvert=1\times{7}-3\times{2}=1$ and 
+\[
+A^{-1}=\begin{bmatrix}
+	1 & 3 \\ 
+	2 & 7
+\end{bmatrix}^{-1}
+=\frac{1}{\lvert A\rvert}
+\begin{bmatrix*}[r]
+	7 & -2 \\ 
+	-3 &  1
+\end{bmatrix*} \,.
+\]
+Therefore inverse of A=$\begin{bmatrix}
+	7 & -2\\
+	-3 & 1
+\end{bmatrix}$
+\newline
+\subsubsection{QR Decomposition:-}
+Let
+\[
+A = \begin{bmatrix}
+	1 & 3 \\ 
+	2 & 7
+\end{bmatrix}
+\]
+The column vectors of the matrix is given by,
+\newline
+\begin{equation}
+	a=
+	\begin{bmatrix}
+		1\\
+		2
+	\end{bmatrix}
+	,b=
+	\begin{bmatrix}
+		3\\
+		7
+	\end{bmatrix}
+\end{equation}
+\newline
+Therefore,
+\newline
+\begin{equation}
+	\begin{bmatrix}
+		a & b
+	\end{bmatrix}=
+	\begin{bmatrix}
+		$$q_1$$ & $$q_2$$
+	\end{bmatrix}\begin{bmatrix}
+		$$u_1$$ & $$u_3$$\\
+		0 & $$u_2$$
+	\end{bmatrix}=QR
+\end{equation}
+\newline
+\begin{equation}
+	$$$u_1$=$\mid \mid a \mid \mid$=$\sqrt{2^2+1^2}$=$\sqrt{5}$$$
+\end{equation}
+\newline
+$q_1$=$\frac{a}{u_1}$=
+$\begin{bmatrix}
+	\frac{1}{\sqrt{5}}\\
+	\frac{2}{\sqrt{5}}
+\end{bmatrix}$
+\newline
+$u_3$=$q^T_{1}$b=
+$\begin{bmatrix}
+	\frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}}\\
+\end{bmatrix}$
+$\begin{bmatrix}
+	3 \\
+	7
+\end{bmatrix}$=$\frac{17}{\sqrt{5}}$
+\newline
+x=b-$u_3$$q_1$
+\newline
+$q_2$=$\frac{x}{\mid \mid x \mid \mid}$=
+$\begin{bmatrix}
+	\frac{-2}{5\sqrt{5}}\\
+	\frac{1}{5\sqrt{5}}
+\end{bmatrix}$
+\newline
+$u_2$=$q^T_{2}$b=
+$\begin{bmatrix}
+	\frac{1}{5\sqrt{5}}
+\end{bmatrix}$
+\newline
+Therefore,
+\newline
+\paragraph{\begin{equation}
+		Q=
+		\begin{bmatrix}
+			\frac{1}{\sqrt{5}} & \frac{-2}{5\sqrt{5}}\\
+			\frac{2}{\sqrt{5}} & \frac{1}{5\sqrt{5}}
+		\end{bmatrix}
+\end{equation}}
+\paragraph{\begin{equation}
+		R=
+		\begin{bmatrix}
+			\sqrt{5} & \frac{17}{5\sqrt{5}}\\
+			0 & \frac{1}{5\sqrt{5}}
+		\end{bmatrix}
+\end{equation}}
+\end{document}
